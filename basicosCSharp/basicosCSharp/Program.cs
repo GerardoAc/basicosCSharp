@@ -69,8 +69,14 @@ namespace basicosCSharp
                 rondasFaltantes--;
             } while (rondasFaltantes > 0);
 
+
+            string[] diasSemanales = { "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo" };
+            for (int dia = 0; dia < 7; dia++)
+            {
+                Console.WriteLine("{0} es el número {1} de la semana", diasSemanales[dia], dia + 1);
+            }
         }
-        
-    }
+
+}
 
 }
